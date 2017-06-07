@@ -1,0 +1,43 @@
+﻿@model StudentRegistrationTool.Models.Register
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Register</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PresentFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PresentFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PresentTill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PresentTill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Aanpassen", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Terug naar overzicht", "Index")
+</p>
